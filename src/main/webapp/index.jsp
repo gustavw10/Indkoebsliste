@@ -12,11 +12,13 @@
 </head>
 <body>
 Welcome to your list.
+<br><br>
+${requestScope.besked}
 
 <form action="LogInServlet" method ="post">
-    <label for="fname">First name:</label><br>
+    <label for="fname">navn:</label><br>
     <input type="text" id="fname" name="navn"><br>
-    <label for="lname">Last name:</label><br>
+    <label for="lname">kodeord:</label><br>
     <input type="text" id="lname" name="kodeord"><br><br>
     <input type="submit" value="login">
 </form>
