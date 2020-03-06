@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>huskeliste</title>
+    <title>Huskeliste</title>
 </head>
 <body>
 du har nu adgang til din huskeliste
