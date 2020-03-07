@@ -28,6 +28,7 @@ public class LogInServlet extends HttpServlet {
 
         }
 
+
         if (!((Map<String, String>) servletContext.getAttribute("brugerMap")).containsKey(navn)) {
 
 
@@ -38,6 +39,10 @@ public class LogInServlet extends HttpServlet {
 
         if ( ((Map<String,String>) servletContext.getAttribute("brugerMap")).get(navn).equalsIgnoreCase(kodeord)){
             //todo gå til huske liste
+
+            if(navn.equalsIgnoreCase("admin")){
+                request.getRequestDispatcher("WEB-INF/admin.jsp").forward(request, response);
+            }
             request.getRequestDispatcher("WEB-INF/huskeliste.jsp").forward(request, response);
         }
 
